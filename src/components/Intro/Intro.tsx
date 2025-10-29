@@ -7,8 +7,8 @@ import CircleInitial from "../CircleInitial/CircleInitial";
 import Calculator from "../Calculator/Calculator";
 import exchangeIcon from "../../assets/icons/exchange.png";
 import networkIcon from "../../assets/icons/network.png";
-import complexIcon from "../../assets/icons/complex.png";
-import closeIcon from "../../assets/icons/close.png";
+import Compare from "../Compare/Compare";
+import Compare2 from "../Compare/Compare2";
 
 const Intro = () => {
   return (
@@ -138,35 +138,8 @@ const Intro = () => {
         </h2>
         <p className={styles.text2}>Compare different pricing models</p>
         <div className={styles.compareContainer}>
-          <div className={styles.compare}>
-            <div className={styles.compareHeader}>
-              <h3 className={`${styles.text1} red`}>Complex platform</h3>
-              <img
-                className={styles.complex}
-                src={complexIcon}
-                alt="Complex platforms"
-              />
-              <p>Confusing!</p>
-            </div>
-            <ul>
-              <li>
-                <img src={closeIcon} alt="" />
-                <p>VIP Levels</p>
-              </li>
-              <li>
-                <img src={closeIcon} alt="" />
-                <p>Volume Tiers</p>
-              </li>
-              <li>
-                <img src={closeIcon} alt="" />
-                <p>Hidden Spreads</p>
-              </li>
-              <li>
-                <img src={closeIcon} alt="" />
-                <p>Changing Fees</p>
-              </li>
-            </ul>
-          </div>
+          <Compare/>
+          <Compare2/>
         </div>
         <div className={styles.startLearning}>
           <img src={graduationCap} alt="Graduation Cap" />
