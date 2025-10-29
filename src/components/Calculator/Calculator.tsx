@@ -1,7 +1,16 @@
-import type { CSSProperties } from "react";
+import { type CSSProperties } from "react";
 import calculator from "../../assets/icons/calculator.png";
 
-const Calculator = () => {
+type CalculatorProps = {
+  onClick: () => void;
+}
+
+const Calculator: React.FC<CalculatorProps> = ({onClick}) => { 
+
+  const handleClick = () => {
+    onClick();
+  }
+  
   const style: CSSProperties = {
     backgroundColor: "var(--yellow-2)",
     width: "66px",
@@ -14,10 +23,11 @@ const Calculator = () => {
     position: "fixed",
     bottom: "20px",
     right: "20px",
-    zIndex: "3"
+    zIndex: "3",
+    cursor: "pointer",
   };
   return (
-    <div style={style}>
+    <div style={style} onClick={handleClick}> 
       <img src={calculator} alt="" />
     </div>
   );

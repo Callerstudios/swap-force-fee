@@ -14,11 +14,14 @@ import FeeStructure from "../../FeeStructure/FeeStructure";
 import Test from "../Test/Test";
 import TeamMember from "../TeamMember/TeamMember";
 import FAQ from "../FAQ/FAQ";
+import CalculatorView from "../CalculatorView/CalculatorView";
+import { useState } from "react";
 
 const Intro = () => {
+  const [showCalculator, setShowCalculator] = useState(false);
   return (
     <div className={styles.intro}>
-      <Calculator />
+      <Calculator onClick={() => setShowCalculator(true)} />
       <p className={styles.blueHeader1}>Confused About Exchange Fees?</p>
       <p className={styles.text1}>
         We’ll explain everything in plain English. No jargon, no hidden costs.
@@ -198,8 +201,11 @@ const Intro = () => {
       </section>
       <section className={styles.feeStructure}>
         <p className={styles.blackHeader1}>Common Questions</p>
-        <FAQ/>
+        <FAQ />
       </section>
+      {showCalculator && (
+        <CalculatorView onClick={() => setShowCalculator(false)} />
+      )}
     </div>
   );
 };

@@ -1,0 +1,114 @@
+.container {
+  /* width: 100vw; */
+  margin: 0 auto;
+  padding: 1.5rem;
+  font-family: "Inter", sans-serif;
+  color: #000;
+  position: fixed;
+  inset: 0;
+  height: 100vh;
+  background-color: white;
+  z-index: 5;
+}
+
+.backButton {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.title {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.select,
+.input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.select:focus,
+.input:focus {
+  border-color: #03386d;
+}
+
+.quickButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.quickButton {
+  background-color: #b4cee2;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease;
+}
+
+.quickButton:hover {
+  background-color: #9abbd6;
+}
+
+.active {
+  background-color: #03386d;
+  color: #fff;
+}
+
+.calculateButton {
+  width: 100%;
+  background-color: #031739;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.calculateButton:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .quickButton {
+    flex: 1;
+    text-align: center;
+  }
+}
