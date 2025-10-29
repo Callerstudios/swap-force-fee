@@ -51,7 +51,6 @@ const FeesTable: React.FC = () => {
         ))}
       </div>
 
-      {/* Fee Tables */}
       <div className={styles.categories}>
         {Object.entries(currentData).map(([category, items]) => (
           <div key={category} className={styles.category}>
