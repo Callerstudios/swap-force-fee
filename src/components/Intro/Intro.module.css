@@ -125,6 +125,7 @@
 }
 .people {
   position: relative;
+  width: 100%;
 }
 .participant {
   max-width: calc(100% - 80px);
