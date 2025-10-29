@@ -23,8 +23,10 @@ const CircleInitial: React.FC<InitialProps> = ({
       style={{
         backgroundColor: "#FFA505",
         border: "1px solid white",
-        width: width + "px",
-        height: height + "px",
+        minWidth: width + "px",
+        maxWidth: width + "px",
+        minHeight: height + "px",
+        maxHeight: height + "px",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",

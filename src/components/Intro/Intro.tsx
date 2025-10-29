@@ -147,7 +147,7 @@ const Intro = () => {
           <p>Start with Fair Fees @Samic</p>
         </div>
       </section>
-      <section>
+      <section className={styles.savingStories}>
         <p className={styles.blueHeader1}>Real Saving Stories</p>
         <p>See how much others save</p>
         <div className={styles.storyContainer}>
@@ -156,6 +156,18 @@ const Intro = () => {
             role="Developer"
             story="I was paying £45/month in fees. With VitalSwap, I pay $12. That's $400/year saved!"
             summary="Saves $33/month • £400/year"
+          />
+          <SaveStory
+            name="Salatin isabella"
+            role="Business Owner"
+            story="The calculator showed me exactly what I'd save. No surprises, no regrets."
+            summary="Saved $1,200 in 6 months"
+          />
+          <SaveStory
+            name="Priya Samuel"
+            role="Student"
+            story="I love that fees are the same whether I trade $50 or $500. Fair and simple."
+            summary="VitalSwap user for 14 months"
           />
         </div>
       </section>
