@@ -12,6 +12,7 @@ import Compare2 from "../Compare/Compare2";
 import SaveStory from "../SaveStory/SaveStory";
 import FeeStructure from "../../FeeStructure/FeeStructure";
 import Test from "../Test/Test";
+import TeamMember from "../TeamMember/TeamMember";
 
 const Intro = () => {
   return (
@@ -182,6 +183,14 @@ const Intro = () => {
         <p className={styles.blueHeader1}>Test Your Knowledge</p>
         <p>Unlock your personalized savings estimate</p>
         <Test />
+      </section>
+      <section className={styles.feeStructure}>
+        <p className={styles.blueHeader1}>Your VitalSwap Guide</p>
+        <p>Choose a team member to help you get started</p>
+        <TeamMember name="Samuel Frank" tag="Samic" />
+        <TeamMember name="Godwin Chinedu" tag="gcdesigns" />
+        <TeamMember name="Valentine Egbujie" tag="ValleymindAI" />
+        <TeamMember name="Busari Roqeeb" tag="Beekay" />
       </section>
     </div>
   );

@@ -41,13 +41,13 @@
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 400;
-  src: url("./assets/fonts/Poppins/Poppins-Medium.ttf") format("woff2");
+  src: url("./assets/fonts/Poppins/Poppins-Regular.ttf") format("woff2");
 }
 @font-face {
   font-family: "Gilroy Italic";
   font-style: normal;
   font-weight: 400;
-  src: url("./assets/fonts/Poppins/Poppins-MediumItalic.ttf") format("woff2");
+  src: url("./assets/fonts/Poppins/Poppins-Italic.ttf") format("woff2");
 }
 .absolute-mark{
   position: absolute;

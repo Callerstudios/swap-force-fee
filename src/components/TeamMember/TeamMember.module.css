@@ -1,0 +1,24 @@
+.teamMember{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    width: min(80%, 300px);
+    border-radius: 10px;
+    background-color: white;
+}
+.tag{
+    border: 1px solid var(--blue-4);
+    padding: 10px;
+    border-radius: 10px;
+}
+.start{
+    width: 100%;
+    background-color: var(--blue-3);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 400;
+}
