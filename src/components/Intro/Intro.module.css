@@ -1,4 +1,4 @@
-.blueheader1 {
+.blueHeader1 {
   font-style: Semi Bold;
   font-size: 22px;
   line-height: 100%;
@@ -203,4 +203,14 @@
     display: none;
   }
 }
-
+.storyContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+  -webkit-scrollbar {
+    display: none;
+  }
+}

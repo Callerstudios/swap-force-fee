@@ -9,12 +9,13 @@ import exchangeIcon from "../../assets/icons/exchange.png";
 import networkIcon from "../../assets/icons/network.png";
 import Compare from "../Compare/Compare";
 import Compare2 from "../Compare/Compare2";
+import SaveStory from "../SaveStory/SaveStory";
 
 const Intro = () => {
   return (
     <div className={styles.intro}>
       <Calculator />
-      <p className={styles.blueheader1}>Confused About Exchange Fees?</p>
+      <p className={styles.blueHeader1}>Confused About Exchange Fees?</p>
       <p className={styles.text1}>
         We’ll explain everything in plain English. No jargon, no hidden costs.
       </p>
@@ -52,7 +53,7 @@ const Intro = () => {
         </div>
       </section>
       <section className={styles.section1}>
-        <h2 className={`blue ${styles.blueheader1}`}>
+        <h2 className={`blue ${styles.blueHeader1}`}>
           What Are You Paying For?
         </h2>
         <p className={styles.text1}>
@@ -138,12 +139,21 @@ const Intro = () => {
         </h2>
         <p className={styles.text2}>Compare different pricing models</p>
         <div className={styles.compareContainer}>
-          <Compare/>
-          <Compare2/>
+          <Compare />
+          <Compare2 />
         </div>
         <div className={styles.startLearning}>
           <img src={graduationCap} alt="Graduation Cap" />
           <p>Start with Fair Fees @Samic</p>
+        </div>
+      </section>
+      <section>
+        <p className={styles.blueHeader1}>Real Saving Stories</p>
+        <p>See how much others save</p>
+        <div className={styles.storyContainer}>
+          <SaveStory/>
+          <SaveStory/>
+          <SaveStory/>
         </div>
       </section>
     </div>
