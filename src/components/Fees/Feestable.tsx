@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import styles from "./FeesTable.module.css";
+import styles from "./Feestable.module.css";
 
 type FeeItem = {
   Service: string;
