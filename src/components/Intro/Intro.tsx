@@ -133,8 +133,8 @@ const Intro = () => {
         <p>Takes 30 seconds</p>
       </section>
       <section className={styles.costLess}>
-        <h2>Why VitalSwap Costs Less</h2>
-        <p>Compare different pricing models</p>
+        <h2 className={`blue ${styles.blueHeader1}`}>Why VitalSwap Costs Less</h2>
+        <p className={styles.text2}>Compare different pricing models</p>
         <div>
           <div className={styles.compare}>
             <div>
