@@ -17,7 +17,7 @@ import FAQ from "../FAQ/FAQ";
 import CalculatorView from "../CalculatorView/CalculatorView";
 import chatIcon from "../../assets/icons/chat.png";
 import { useState } from "react";
-import FeesTable from "../Fees/Feestable";
+import FeesTable from "../Fees/Feestable";;
 
 const Intro = () => {
   const [showCalculator, setShowCalculator] = useState(false);
