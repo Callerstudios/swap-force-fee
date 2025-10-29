@@ -1,13 +1,21 @@
-import styles from './Intro.module.css';
+import styles from "./Intro.module.css";
 import sadSmiley from "../../assets/icons/sad.png";
 import happySmiley from "../../assets/icons/happy.png";
 import line from "../../assets/icons/graphLine.png";
+import graduationCap from "../../assets/icons/graduation-cap.png";
+import CircleInitial from "../CircleInitial/CircleInitial";
+import Calculator from "../Calculator/Calculator";
+import exchangeIcon from "../../assets/icons/exchange.png";
+import networkIcon from "../../assets/icons/network.png";
+import complexIcon from "../../assets/icons/complex.png";
+import closeIcon from "../../assets/icons/close.png";
 
 const Intro = () => {
   return (
     <div className={styles.intro}>
-      <p className={styles.confused}>Confused About Exchange Fees?</p>
-      <p className={styles.explanation}>
+      <Calculator />
+      <p className={styles.blueheader1}>Confused About Exchange Fees?</p>
+      <p className={styles.text1}>
         We’ll explain everything in plain English. No jargon, no hidden costs.
       </p>
       <section className={styles.smileyInfo}>
@@ -25,8 +33,142 @@ const Intro = () => {
           </span>
         </div>
       </section>
+      <section className={styles.section1}>
+        <div className={styles.startLearning}>
+          <img src={graduationCap} alt="Graduation Cap" />
+          <p>Start Learning</p>
+        </div>
+        <p className={styles.fees}>Calculate fees now</p>
+        <div className={styles.people}>
+          <span className={styles.circles}>
+            <CircleInitial initial="J" left="0" />
+            <CircleInitial initial="M" left="20px" />
+            <CircleInitial initial="D" left="40px" />
+            <CircleInitial initial="+" left="60px" />
+          </span>
+          <div className={styles.participant}>
+            <p>10,000+ traders trust us</p>
+          </div>
+        </div>
+      </section>
+      <section className={styles.section1}>
+        <h2 className={`blue ${styles.blueheader1}`}>
+          What Are You Paying For?
+        </h2>
+        <p className={styles.text1}>
+          Three main types of crypto fees explained simply
+        </p>
+        <div className={styles.feeExplain}>
+          <span className={styles.exchange}>
+            <img src={exchangeIcon} alt="Exchange Icon" />
+          </span>
+          <p className={styles.text2}>Trading Fees</p>
+          <p className={styles.text1}>
+            The fee you pay to make a swap. Usually 0.5-2% of your trade.
+          </p>
+          <div className={styles.example}>
+            <div className={styles.startLearning}>
+              <p>See Example</p>
+            </div>
+            <p>Example: $100 swap = £1-2 fee on most platforms</p>
+            <p>VitalSwap charges just 0.3% - that's $0.30 on a $100 swap</p>
+            <div className={styles.vitalPercent}>
+              <p>VitalSwap: 0.3%</p>
+            </div>
+          </div>
+        </div>
+        <div className={styles.feeExplain}>
+          <span className={styles.exchange}>
+            <img src={networkIcon} alt="Exchange Icon" />
+          </span>
+          <p className={styles.text2}>Network Fees</p>
+          <p className={styles.text1}>The cost to process your transaction.</p>
+          <div className={styles.example}>
+            <div className={styles.startLearning}>
+              <p>Learn more</p>
+            </div>
+            <p>
+              <span style={{ fontWeight: 600 }}>Think of it as:</span>
+              Postage for your dollar
+            </p>
+            <p>
+              Network fees vary by traffic. We show you the exact amount before
+              confirming
+            </p>
+            <div className={styles.noMarkup}>
+              <p>No markup</p>
+            </div>
+          </div>
+        </div>
+        <div className={styles.feeExplain}>
+          <span className={styles.exchange}>
+            <img src={networkIcon} alt="Exchange Icon" />
+          </span>
+          <p className={styles.text2}>Hidden Fees</p>
+          <p className={styles.text1}>
+            Some platforms add 'spread' or conversion fees they don't tell you
+            about
+          </p>
+          <div className={styles.example}>
+            <div className={styles.startLearning}>
+              <p>See the truth</p>
+            </div>
+            <p>
+              <span style={{ fontWeight: 600 }}>These can add:</span>
+              0.5-1% extra to your cost
+            </p>
+            <p>
+              Many platforms hide these in the exchange rate. VitalSwap never
+              does this.
+            </p>
+            <div className={styles.vitalPercent}>
+              <p>VitalSwap: $0 Hidden</p>
+            </div>
+          </div>
+        </div>
+        <div className={styles.startLearning}>
+          <img src={graduationCap} alt="Graduation Cap" />
+          <p>Start Learning</p>
+        </div>
+        <p>Takes 30 seconds</p>
+      </section>
+      <section className={styles.costLess}>
+        <h2>Why VitalSwap Costs Less</h2>
+        <p>Compare different pricing models</p>
+        <div>
+          <div className={styles.compare}>
+            <div>
+              <h3>Complex platform</h3>
+              <img src={complexIcon} alt="Complex platforms" />
+              <p>Confusing!</p>
+            </div>
+            <ul>
+              <li>
+                <img src={closeIcon} alt="" />
+                <p>VIP Levels</p>
+              </li>
+              <li>
+                <img src={closeIcon} alt="" />
+                <p>Volume Tiers</p>
+              </li>
+              <li>
+                <img src={closeIcon} alt="" />
+                <p>Hidden Spreads</p>
+              </li>
+              <li>
+                <img src={closeIcon} alt="" />
+                <p>Changing Fees</p>
+              </li>
+            </ul>
+          </div>
+          <div className={styles.startLearning}>
+            <img src={graduationCap} alt="Graduation Cap" />
+            <p>Start with Fair Fees @Samic</p>
+          </div>
+        </div>
+      </section>
     </div>
   );
-}
+};
 
-export default Intro
+export default Intro;

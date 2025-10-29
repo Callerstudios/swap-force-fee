@@ -1,16 +1,30 @@
-.confused {
+.blueheader1 {
   font-style: Semi Bold;
   font-size: 22px;
   line-height: 100%;
   letter-spacing: 0%;
   color: var(--blue-3);
+  font-weight: 400;
 }
-.explanation {
+.text1 {
   font-weight: 400;
   font-style: Regular;
   font-size: 14.83px;
   line-height: 100%;
   letter-spacing: 0%;
+}
+.text2 {
+  font-weight: 600;
+  font-style: Regular;
+  font-size: 16.83px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.section1 {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .intro {
   display: flex;
@@ -29,13 +43,14 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  justify-content: space-between;
 }
-.smileys span{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5px;
-    justify-content: center;
+.smileys span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  justify-content: center;
 }
 .smileys img {
   width: 58px;
@@ -66,4 +81,103 @@
   font-size: 9.17px;
   line-height: 100%;
   letter-spacing: 0%;
+}
+.startLearning {
+  margin: 0 auto;
+  width: 329px;
+  height: 44px;
+  border-radius: 10px;
+  background-color: var(--blue-3);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  margin-bottom: 20px;
+}
+.fees {
+  color: var(--blue-4);
+  font-size: 14.83px;
+  margin-bottom: 10px;
+}
+.feeExplain {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+.people {
+  position: relative;
+}
+.participant {
+  max-width: calc(100% - 80px);
+  height: 44px;
+  opacity: 1;
+  border-radius: 10px;
+  margin-left: auto;
+  background-color: var(--off-white);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 12.83px;
+}
+.circles > * {
+  position: absolute;
+  top: 0;
+}
+.exchange {
+  margin: 20px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  background-color: #b4d5ff;
+  width: 57px;
+  height: 57px;
+  border-radius: 10px;
+}
+
+.pay {
+  margin-top: 50px;
+  font-size: 24px;
+  font-weight: 600px;
+}
+.example {
+  padding: 20px;
+  margin: 0 auto;
+  width: 348px;
+  height: 281px;
+  border-radius: 10px;
+  color: #032d64;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--off-white);
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.example p {
+  font-size: 10.83px;
+}
+.vitalPercent {
+  width: 123px;
+  height: 44px;
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #032d64;
+}
+.noMarkup {
+  width: 123px;
+  height: 44px;
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  background-color: #ffa505;
 }
