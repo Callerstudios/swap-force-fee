@@ -133,13 +133,19 @@ const Intro = () => {
         <p>Takes 30 seconds</p>
       </section>
       <section className={styles.costLess}>
-        <h2 className={`blue ${styles.blueHeader1}`}>Why VitalSwap Costs Less</h2>
+        <h2 className={`blue ${styles.blueHeader1}`}>
+          Why VitalSwap Costs Less
+        </h2>
         <p className={styles.text2}>Compare different pricing models</p>
-        <div>
+        <div className={styles.compareContainer}>
           <div className={styles.compare}>
-            <div>
-              <h3>Complex platform</h3>
-              <img src={complexIcon} alt="Complex platforms" />
+            <div className={styles.compareHeader}>
+              <h3 className={`${styles.text1} red`}>Complex platform</h3>
+              <img
+                className={styles.complex}
+                src={complexIcon}
+                alt="Complex platforms"
+              />
               <p>Confusing!</p>
             </div>
             <ul>
@@ -161,10 +167,10 @@ const Intro = () => {
               </li>
             </ul>
           </div>
-          <div className={styles.startLearning}>
-            <img src={graduationCap} alt="Graduation Cap" />
-            <p>Start with Fair Fees @Samic</p>
-          </div>
+        </div>
+        <div className={styles.startLearning}>
+          <img src={graduationCap} alt="Graduation Cap" />
+          <p>Start with Fair Fees @Samic</p>
         </div>
       </section>
     </div>
