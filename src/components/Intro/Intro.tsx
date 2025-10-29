@@ -15,8 +15,9 @@ import Test from "../Test/Test";
 import TeamMember from "../TeamMember/TeamMember";
 import FAQ from "../FAQ/FAQ";
 import CalculatorView from "../CalculatorView/CalculatorView";
-import chatIcon from "../../assets/icons/chat.png"
+import chatIcon from "../../assets/icons/chat.png";
 import { useState } from "react";
+import FeesTable from "../Fees/Feestable";
 
 const Intro = () => {
   const [showCalculator, setShowCalculator] = useState(false);
@@ -42,7 +43,7 @@ const Intro = () => {
           </span>
         </div>
       </section>
-      <section className={styles.section1}>
+      <section className={styles.feeStructure}>
         <div className={styles.startLearning}>
           <img src={graduationCap} alt="Graduation Cap" />
           <p>Start Learning</p>
@@ -182,6 +183,7 @@ const Intro = () => {
       <section className={styles.feeStructure}>
         <p className={styles.blueHeader1}>Complete Fee Structure</p>
         <p>Tap any row to see details</p>
+        <FeesTable />
         <FeeStructure />
       </section>
       <section className={styles.feeStructure}>

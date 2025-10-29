@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./CalculatorView.module.css";
+import FeesTable from "../Fees/Feestable";
 
 type CalculatorProps = {
   onClick: () => void;
@@ -17,6 +18,9 @@ const CalculatorView: React.FC<CalculatorProps> = ({onClick}) => {
 
   return (
     <div className={styles.container}>
+      <section>
+        <FeesTable/>
+      </section>
       <button className={styles.backButton} onClick={onClick}>←</button>
       <h2 className={styles.title}>Calculator</h2>
       <p className={styles.subtitle}>Calculate your fees</p>

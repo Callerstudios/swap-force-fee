@@ -228,7 +228,6 @@
 .storyContainer{
   max-width: 90vw;
   display: flex;
-  /* justify-content: center; */
   flex-direction: row;
   gap: 20px;
   overflow-x: auto;
@@ -239,7 +238,7 @@
   }
 }
 .feeStructure{
-  min-width: min(400px, 90%);;
+  min-width: min(400px, 90%);
   display: flex;
   flex-direction: column;
   align-items: center;
