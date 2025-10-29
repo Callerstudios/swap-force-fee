@@ -4,7 +4,7 @@ const FAQ = () => {
   return (
     <div className={styles.faq}>
       <div className={styles.start}>
-        <p>Search Questions...</p>
+        <p>FAQ</p>
       </div>
       <section className={styles.question}>
         <p className="blue">Are there really no hidden fees?</p>
