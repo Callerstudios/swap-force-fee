@@ -13,6 +13,7 @@ import SaveStory from "../SaveStory/SaveStory";
 import FeeStructure from "../../FeeStructure/FeeStructure";
 import Test from "../Test/Test";
 import TeamMember from "../TeamMember/TeamMember";
+import FAQ from "../FAQ/FAQ";
 
 const Intro = () => {
   return (
@@ -191,6 +192,13 @@ const Intro = () => {
         <TeamMember name="Godwin Chinedu" tag="gcdesigns" />
         <TeamMember name="Valentine Egbujie" tag="ValleymindAI" />
         <TeamMember name="Busari Roqeeb" tag="Beekay" />
+        <p className={`blue ${styles.textSmall}`}>
+          All team members provide the same great service
+        </p>
+      </section>
+      <section className={styles.feeStructure}>
+        <p className={styles.blackHeader1}>Common Questions</p>
+        <FAQ/>
       </section>
     </div>
   );
