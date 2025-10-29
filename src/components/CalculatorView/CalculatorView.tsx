@@ -32,6 +32,7 @@ const CalculatorView: React.FC<CalculatorProps> = ({onClick}) => {
           <option value="USD">United States dollar (USD)</option>
           <option value="EUR">Euro (EUR)</option>
           <option value="GBP">British pound (GBP)</option>
+          <option value="NGN">Naira (NGN)</option>
         </select>
       </div>
 

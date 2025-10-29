@@ -99,7 +99,7 @@
 }
 .startLearning {
   margin: 0 auto;
-  width: 329px;
+  width: min(90%, 329px);
   height: 44px;
   border-radius: 10px;
   background-color: var(--blue-3);
@@ -110,6 +110,7 @@
   gap: 10px;
   color: white;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 .fees {
   color: var(--blue-4);

@@ -15,6 +15,7 @@ import Test from "../Test/Test";
 import TeamMember from "../TeamMember/TeamMember";
 import FAQ from "../FAQ/FAQ";
 import CalculatorView from "../CalculatorView/CalculatorView";
+import chatIcon from "../../assets/icons/chat.png"
 import { useState } from "react";
 
 const Intro = () => {
@@ -202,6 +203,10 @@ const Intro = () => {
       <section className={styles.feeStructure}>
         <p className={styles.blackHeader1}>Common Questions</p>
         <FAQ />
+      </section>
+      <section className={styles.feeStructure}>
+        <img src={chatIcon} alt="" />
+        <p className={styles.startLearning}>Chat with us</p>
       </section>
       {showCalculator && (
         <CalculatorView onClick={() => setShowCalculator(false)} />
