@@ -10,6 +10,28 @@
   gap: 20px;
   align-items: center;
 }
+.textSmall{
+
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 10.83px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.text1 {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14.83px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.text2 {
+  font-weight: 600;
+  font-style: Regular;
+  font-size: 16.83px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
 .compareHeader {
   display: flex;
   flex-direction: column;
