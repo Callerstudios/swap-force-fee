@@ -1,0 +1,32 @@
+.header {
+  height: 70px;
+  background-color: var(--white-bg);
+  width: 100%;
+  box-shadow: 0 1px 4px var(--shadow-color);
+  display: flex;
+  align-items: center;
+}
+.headerText{
+    display: flex;
+    flex-direction: row;
+    min-width: 50%;
+    margin-left: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+    gap: 50px;
+}
+.headerText h2{
+  font-weight: 400;
+  font-size: 14.83px;
+}
+.join{
+    background-color: var(--blue-3);
+    height: 32px;
+    width: 129px;
+    border-radius: 22px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
