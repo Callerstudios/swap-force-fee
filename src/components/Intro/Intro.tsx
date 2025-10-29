@@ -10,6 +10,7 @@ import networkIcon from "../../assets/icons/network.png";
 import Compare from "../Compare/Compare";
 import Compare2 from "../Compare/Compare2";
 import SaveStory from "../SaveStory/SaveStory";
+import FeeStructure from "../../FeeStructure/FeeStructure";
 
 const Intro = () => {
   return (
@@ -170,6 +171,11 @@ const Intro = () => {
             summary="VitalSwap user for 14 months"
           />
         </div>
+      </section>
+      <section className={styles.feeStructure}>
+        <p className={styles.blueHeader1}>Complete Fee Structure</p>
+        <p>Tap any row to see details</p>
+        <FeeStructure/>
       </section>
     </div>
   );
