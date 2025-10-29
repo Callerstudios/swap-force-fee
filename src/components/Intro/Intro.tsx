@@ -11,6 +11,7 @@ import Compare from "../Compare/Compare";
 import Compare2 from "../Compare/Compare2";
 import SaveStory from "../SaveStory/SaveStory";
 import FeeStructure from "../../FeeStructure/FeeStructure";
+import Test from "../Test/Test";
 
 const Intro = () => {
   return (
@@ -175,7 +176,12 @@ const Intro = () => {
       <section className={styles.feeStructure}>
         <p className={styles.blueHeader1}>Complete Fee Structure</p>
         <p>Tap any row to see details</p>
-        <FeeStructure/>
+        <FeeStructure />
+      </section>
+      <section className={styles.feeStructure}>
+        <p className={styles.blueHeader1}>Test Your Knowledge</p>
+        <p>Unlock your personalized savings estimate</p>
+        <Test />
       </section>
     </div>
   );
