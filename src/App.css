@@ -43,3 +43,21 @@
   font-weight: 400;
   src: url("./assets/fonts/Poppins/Poppins-Medium.ttf") format("woff2");
 }
+@font-face {
+  font-family: "Gilroy Italic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/Poppins/Poppins-MediumItalic.ttf") format("woff2");
+}
+.absolute-mark{
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  bottom: -2px;
+  right: -2px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}

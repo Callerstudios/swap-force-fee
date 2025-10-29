@@ -151,9 +151,12 @@ const Intro = () => {
         <p className={styles.blueHeader1}>Real Saving Stories</p>
         <p>See how much others save</p>
         <div className={styles.storyContainer}>
-          <SaveStory/>
-          <SaveStory/>
-          <SaveStory/>
+          <SaveStory
+            name="Godwin Desi"
+            role="Developer"
+            story="I was paying £45/month in fees. With VitalSwap, I pay $12. That's $400/year saved!"
+            summary="Saves $33/month • £400/year"
+          />
         </div>
       </section>
     </div>
